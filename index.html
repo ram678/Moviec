@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movies Downloader by TM</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial;
+  background: linear-gradient(135deg,#141e30,#243b55);
+  color:white;
+  transition:0.3s;
+}
+
+body.light {
+  background:#f2f2f2;
+  color:#000;
+}
+
+header {
+  text-align:center;
+  padding:25px;
+  background:rgba(0,0,0,0.5);
+}
+
+h1 {
+  margin:0;
+  font-size:32px;
+  background: linear-gradient(90deg,#00dbde,#fc00ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.top {
+  margin-top:15px;
+}
+
+input {
+  padding:10px;
+  border-radius:20px;
+  border:none;
+  width:220px;
+}
+
+button {
+  padding:10px;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+  padding:20px;
+}
+
+.card {
+  background:rgba(255,255,255,0.1);
+  border-radius:15px;
+  padding:15px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:scale(1.05);
+}
+
+.title {
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.btn {
+  padding:8px 15px;
+  border-radius:20px;
+  text-decoration:none;
+  color:white;
+  background: linear-gradient(90deg,#00dbde,#fc00ff);
+}
+
+footer {
+  text-align:center;
+  padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Movies Downloader by TM</h1>
+
+<div class="top">
+<input type="text" id="search" placeholder="Search movie...">
+<button onclick="toggleMode()">Toggle</button>
+</div>
+</header>
+
+<main class="grid" id="list">
+
+<!-- ALL 40 MOVIES -->
+
+<div class="card"><div class="title">Bad Newz</div><a class="btn" href="https://drive.google.com/file/d/1enGej6lnbedPob5GWKaUkB1BHnIzqP_1/view">Download</a></div>
+
+<div class="card"><div class="title">Fighter</div><a class="btn" href="https://drive.google.com/file/d/1rnaSGZEo-TZEVVM-fu7z4VP2ybhHPsQb/view">Download</a></div>
+
+<div class="card"><div class="title">Chhaava</div><a class="btn" href="https://drive.google.com/file/d/1NfAaytWUCR-hzWHda1nHim15tvrcfjFI/view">Download</a></div>
+
+<div class="card"><div class="title">Bhool Bhulaiyaa 3</div><a class="btn" href="https://drive.google.com/file/d/1L-QCzKcpAaXok_nzb_7rX7NG8bAE2kF2/view">Download</a></div>
+
+<div class="card"><div class="title">Bhoot</div><a class="btn" href="https://drive.google.com/file/d/1qO6InyOfDqf-IPGftR0V7sR4S4zXosBo/view">Download</a></div>
+
+<div class="card"><div class="title">Dostana</div><a class="btn" href="https://drive.google.com/file/d/1io606PHL0fObCwDwM4JgnGJuwIl0McOS/view">Download</a></div>
+
+<div class="card"><div class="title">Dhamaal</div><a class="btn" href="https://drive.google.com/file/d/119PWzlKKf2Bom_XdYvrUZlpvvwAgElkj/view">Download</a></div>
+
+<div class="card"><div class="title">Hera Pheri</div><a class="btn" href="https://drive.google.com/file/d/1PlchauS5L7fJlBpA-EUA_bDfpGpK0TnN/view">Download</a></div>
+
+<div class="card"><div class="title">Ishq Vishk Rebound</div><a class="btn" href="https://drive.google.com/file/d/1FL0JwuYjFAxDO-2aqs1UZKMMPcSZoIB8/view">Download</a></div>
+
+<div class="card"><div class="title">Raid</div><a class="btn" href="https://drive.google.com/file/d/1NKKJnQt5rjxijZ-5ehXzlF9UqgnogODZ/view">Download</a></div>
+
+<div class="card"><div class="title">Rockstar (2011)</div><a class="btn" href="https://drive.google.com/file/d/1yu4xwZHR8b7U-XvTnpfa1gfu78nkl5BK/view">Download</a></div>
+
+<div class="card"><div class="title">Singham Returns</div><a class="btn" href="https://drive.google.com/file/d/1lB70oSWiiUx8YhUvcYlWbQUcgnbSSpS_/view">Download</a></div>
+
+<div class="card"><div class="title">Godzilla x Kong</div><a class="btn" href="https://drive.google.com/file/d/1UaWHYAyDH_AlVSvvDd_pMkFCXVNIhk9o/view">Download</a></div>
+
+<div class="card"><div class="title">Sooryavansham</div><a class="btn" href="https://drive.google.com/file/d/1WWuUo2JIehPk21-SjGPVd0ihw1sBc8jZ/view">Download</a></div>
+
+<div class="card"><div class="title">Pushpa</div><a class="btn" href="https://drive.google.com/file/d/1Xgrd-oufITAgcl9fER0Djm09aG6RrbRM/view">Download</a></div>
+
+<div class="card"><div class="title">Pushpa 2: The Rule</div><a class="btn" href="https://drive.google.com/file/d/1lusFqkjbTOTxqN_6JMpYC1zaD6lUdZcb/view">Download</a></div>
+
+<div class="card"><div class="title">Jurassic City</div><a class="btn" href="https://drive.google.com/file/d/1hOYa6qQMQ9WlXC3axyEC0IRf5hc2p7sR/view">Download</a></div>
+
+<div class="card"><div class="title">Jurassic Hunt</div><a class="btn" href="https://drive.google.com/file/d/15BX3b2xGgWG_EjmvK_GuCv4cSC6FfdhT/view">Download</a></div>
+
+<div class="card"><div class="title">Jurassic Galaxy</div><a class="btn" href="https://drive.google.com/file/d/112kfjSgxKlE5kQn7-2gcjEVGzZgi7P02/view">Download</a></div>
+
+<div class="card"><div class="title">Jurassic World (2015)</div><a class="btn" href="https://drive.google.com/file/d/1ToVIoZG2jvS62bhdmVgotcPor_4GX8Ca/view">Download</a></div>
+
+<div class="card"><div class="title">Jurassic World Dominion</div><a class="btn" href="https://drive.google.com/file/d/1Y0J_mGgV110Ig70LIkwlxZwow-UGjMEI/view">Download</a></div>
+
+<div class="card"><div class="title">Jurassic Shark 3</div><a class="btn" href="https://drive.google.com/file/d/1F1Unr8eA_A4XwKhu3h6sYg5Hb3yL8qYv/view">Download</a></div>
+
+<div class="card"><div class="title">Jurassic World: Fallen Kingdom</div><a class="btn" href="https://drive.google.com/file/d/1YnYcwPxJi8JUqX__sD2LHi12ZxzKG7N1/view">Download</a></div>
+
+<div class="card"><div class="title">Jurassic World Rebirth</div><a class="btn" href="https://drive.google.com/file/d/1Vr7vFnocBRvewEKcTaRk5SEM0hvoRzrw/view">Download</a></div>
+
+<div class="card"><div class="title">Jolly LLB 3</div><a class="btn" href="https://drive.google.com/file/d/1rZHWC45ErEleXwB5SseUyekoq09J2Rlv/view">Download</a></div>
+
+<div class="card"><div class="title">Jolly LLB 2</div><a class="btn" href="https://drive.google.com/file/d/14mY1nx5aq0X2U6O6qw6HGI5Ex4krQehq/view">Download</a></div>
+
+<div class="card"><div class="title">Border 2</div><a class="btn" href="https://drive.google.com/file/d/1Tw0AGyG39Sr3SL9B7J21swzzE3NxPPiV/view">Download</a></div>
+
+<div class="card"><div class="title">Animal</div><a class="btn" href="https://drive.google.com/file/d/1tO7FFA2HDdjsCS60xoaU3UcULzDKY9ZD/view">Download</a></div>
+
+<div class="card"><div class="title">Baaghi 3</div><a class="btn" href="https://drive.google.com/file/d/1iuKLQm6H911LPV49j3C7-cHNlJ8KLRTw/view">Download</a></div>
+
+<div class="card"><div class="title">Dhurandhar: The Revenge</div><a class="btn" href="https://drive.google.com/file/d/1m4LigSQTEiBcXnxAsfRGrH6Qc0N6zuFv/view">Download</a></div>
+
+<div class="card"><div class="title">Singham Again</div><a class="btn" href="https://drive.google.com/file/d/1gvB2MF9WL7z_Peflrr5FArR_Lk5-pe2M/view">Download</a></div>
+
+<div class="card"><div class="title">Dhurandhar</div><a class="btn" href="https://drive.google.com/file/d/1VNyekgUeOWPUc8Y5j0gaBIEQnrWc0Rte/view">Download</a></div>
+
+<div class="card"><div class="title">Baaghi 4</div><a class="btn" href="https://drive.google.com/file/d/1ltUQCS5t2qs40F54CR7m8CMDSxIz7s5u/view">Download</a></div>
+
+<div class="card"><div class="title">Ram Setu</div><a class="btn" href="https://drive.google.com/file/d/1mcI4P2QRQihyStzW87OubK_cYTacR-04/view">Download</a></div>
+
+<div class="card"><div class="title">Godfather</div><a class="btn" href="https://drive.google.com/file/d/1aZJ1YU4jftEAoFddMJoBWl-_0Qic1iKw/view">Download</a></div>
+
+<div class="card"><div class="title">Bhool Bhulaiyaa 2</div><a class="btn" href="https://drive.google.com/file/d/1ARz5IYNLbEo46Jv8Ffl2HEOHJKOeG848/view">Download</a></div>
+
+<div class="card"><div class="title">Bholaa</div><a class="btn" href="https://drive.google.com/file/d/1saEC746PFjNvY2cyYHCxRIud2t9QMmxi/view">Download</a></div>
+
+<div class="card"><div class="title">Baaghi 2</div><a class="btn" href="https://drive.google.com/file/d/1heb0ZLTefSmKWCMA3dOX-zE7VXdw1pd_/view">Download</a></div>
+
+<div class="card"><div class="title">Baaghi: Ek Yodha</div><a class="btn" href="https://drive.google.com/file/d/1AOxuD4_Ng3E_RjkI8NHfR1TXPZoBd06j/view">Download</a></div>
+
+<div class="card"><div class="title">Raid 2</div><a class="btn" href="https://drive.google.com/file/d/1uk7a1KPfjefSocVD2QcfhEx1uqf0wBiC/view">Download</a></div>
+
+</main>
+
+<footer>
+Updated: 20 & 23 March 2026 • By Tushar Malpani
+</footer>
+
+<script>
+document.getElementById("search").addEventListener("keyup", function(){
+let v=this.value.toLowerCase();
+document.querySelectorAll(".card").forEach(c=>{
+c.style.display=c.innerText.toLowerCase().includes(v)?"block":"none";
+});
+});
+
+function toggleMode(){
+document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>
